@@ -1,0 +1,36 @@
+[user]
+    name = Han Bing Feng
+    email = hangoglebf@gmail.com
+    useConfigOnly = true
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+    autocrlf = false
+    ignorecase = false  
+
+[credential]
+    helper = cache --timeout 30000
+
+[credential "https://github.com"]
+    username = hangoglebf@gmail.com
+
+[push]
+    default = simple
+[color]
+    ui = true
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[difftool "ext_diff"]
+    path = ~/Applications/
+    cmd = ~/Applications/git_ext_diff_araxis.py "$LOCAL" "$REMOTE"
+    keepTemporaries = false
+    trustExitCode = false
+    keepBackup = false
+[http]
+    postBuffer = 524288000
+[alias]
+    st = status
+    ci = commit
+    
