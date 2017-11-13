@@ -22,15 +22,8 @@
     tool = vimdiff
 [difftool]
     prompt = false
-[difftool "ext_diff"]
-    path = ~/Applications/
-    cmd = ~/Applications/git_ext_diff_araxis.py "$LOCAL" "$REMOTE"
-    keepTemporaries = false
-    trustExitCode = false
-    keepBackup = false
 [http]
     postBuffer = 524288000
 [alias]
     st = status
     ci = commit
-    
